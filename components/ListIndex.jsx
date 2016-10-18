@@ -11,7 +11,7 @@ export default class App extends Component {
     return (<div>
     {
       this.props.lists.map(list => (
-        <div onClick={() => this.props.go(list)}>{list.name}</div>
+        <div key={list.id} onClick={() => this.props.go(list)}>{list.name}</div>
       ))
     }
     </div>);

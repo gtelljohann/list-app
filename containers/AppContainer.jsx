@@ -3,15 +3,16 @@
 import { connect } from 'react-redux';
 
 import App from '../components/App';
-import { receiveLists } from '../action-creators/lists'; 
+import { receiveLists, receiveListItems } from '../action-creators';
 
 const mapStateToProps = ({ currentView }) => ({
   currentView
 });
 
 const mapDispatchToProps = dispatch => ({
-  onLoad (lists) {
+  onLoad (lists, listItems) {
     dispatch(receiveLists(lists));
+    dispatch(receiveListItems(listItems));
   }
 }); 
 

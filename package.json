@@ -2,6 +2,9 @@
   "name": "list-app",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base"
+  },
   "repository": {
     "url": "github.com/gtelljohann/list-app",
     "type": "git"

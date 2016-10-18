@@ -3,7 +3,7 @@
 import { connect } from 'react-redux';
 
 import ListIndex from '../components/ListIndex';
-import { fetchAndRenderList } from '../action-creators/lists';
+import { fetchAndRenderList } from '../action-creators';
 
 const mapStateToProps = ({ lists }) => ({
   lists

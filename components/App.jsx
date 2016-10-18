@@ -14,9 +14,10 @@ export default class App extends Component {
 
   componentDidMount () {
     const { onLoad } = this.props;
-    const lists = [{name: 'Movies'}, {name: 'Shows'}, {name: 'Books'}];
+    const lists = [{name: 'Movies', id:0}, {name: 'Shows', id:1}, {name: 'Books', id:2}];
+    const listItems = [{name: 'The Two Towers', listId:0}, {name: 'The Matrix', listId:0}, {name:'Batman Begins', listId:0}, {name: 'Kung Fu Panda', listId:0}, {name:'War and Peace', listId:2}]; 
 
-    onLoad(lists);
+    onLoad(lists, listItems);
   }
 
   render () {
